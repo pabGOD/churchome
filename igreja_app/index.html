@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo da Igreja</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ChurchHome</h1>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">Entrar</button>
+                <p id="login-message"></p>
+            </form>
+        </section>
+
+        <section id="oracao-section" style="display: none;">
+            <h2>Pedidos de Oração</h2>
+            <form id="oracao-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="pedido">Pedido:</label>
+                <textarea id="pedido" name="pedido" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+            <div id="pedidos-list">
+                <h3>Pedidos Recebidos:</h3>
+                <ul id="pedidos"></ul>
+            </div>
+        </section>
+
+        <section id="cultos-section" style="display: none;">
+            <h2>Gestão de Cultos</h2>
+            <button id="novo-culto">Adicionar Culto</button>
+
+            <div id="culto-form" style="display: none;">
+                <h3>Novo Culto</h3>
+                <form id="criar-culto-form">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required><br><br>
+
+                    <label for="horario">Horário:</label>
+                    <input type="time" id="horario" name="horario" required><br><br>
+
+                    <label for="pregador">Pregador:</label>
+                    <input type="text" id="pregador" name="pregador"><br><br>
+
+                    <button type="submit">Salvar Culto</button>
+                </form>
+            </div>
+
+            <div id="cultos-list">
+                <h3>Cultos Agendados:</h3>
+                <ul id="cultos"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ChurchHome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="js/oracao.js"></script>
+    <script src="js/cultos.js"></script>
+
+</body>
+</html>
