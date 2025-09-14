@@ -1,1 +1,50 @@
-<p>cultos works!</p>
+<link rel="stylesheet" href="cultos.css">
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Bem-vindo de volta</h1>
+            <p>Faça login na sua conta</p>
+        </div>
+        
+        <form class="login-form">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Sua senha" required>
+                <span class="password-toggle" onclick="togglePassword()">Mostrar</span>
+            </div>
+            
+            <div class="remember-forgot">
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Lembrar de mim</label>
+                </div>
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            </div>
+            
+            <button type="submit" class="login-button">Entrar</button>
+            
+            <div class="divider">
+                <span>Ou continue com</span>
+            </div>
+            
+            <div class="social-login">
+                <button type="button" class="social-button">
+                    <img src="https://placehold.co/24x24/3b5998/FFFFFF/png?text=f" alt="Logo do Facebook com letra F branca sobre fundo azul">
+                    Facebook
+                </button>
+                <button type="button" class="social-button">
+                    <img src="https://placehold.co/24x24/FFFFFF/000000/png?text=G" alt="Logo do Google com letra G colorida sobre fundo branco">
+                    Google
+                </button>
+            </div>
+            
+            <div class="signup-link">
+                Não tem uma conta? <a href="#">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
